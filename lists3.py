@@ -1,7 +1,7 @@
 import boto3
-s3_ob=boto3.resource('s3')
-#ec2_ob=boto3.resource('ec2')
-#iam_ob=boto3.resource('iam')
-
-for bucket in s3_ob.buckets.all():
+aws_management_console=boto3.session.Session(profile_name="root")
+s3_console=aws_management_console.resource('s3')
+for bucket in s3_console.buckets.all():
     print(bucket.name)
+    print(bucket)
+
