@@ -41,4 +41,4 @@ while True:
         print("Thank you")
         sys.exit()
     else:
-        print("Your option is invalid. Please try once again")
+        print("Your option is invalid. Please try once again.")
